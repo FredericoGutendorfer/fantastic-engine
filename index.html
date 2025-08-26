@@ -3,19 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Imóveis à Venda</title>
-  <!-- Tailwind CSS para facilitar a estilização -->
+  <title>Imóveis à Venda | Imobiliária Modelo</title>
+  
+  <!-- SEO -->
+  <meta name="description" content="Imóveis à venda em destaque: apartamentos, casas e kitnets com preços imperdíveis. Confira as melhores ofertas da Imobiliária Modelo.">
+  <meta name="author" content="Imobiliária Modelo">
+  
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 text-gray-900">
-  <!-- Cabeçalho do site -->
+<body class="bg-gray-100 text-gray-900 font-sans leading-relaxed">
+
+  <!-- Cabeçalho -->
   <header class="bg-white shadow p-4">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
-      <h1 class="text-2xl font-bold">Imóveis à Venda</h1>
-      <nav>
+      <h1 class="text-2xl font-bold text-blue-700">Imobiliária Modelo</h1>
+      
+      <!-- Menu de navegação -->
+      <nav aria-label="Menu principal">
         <ul class="flex gap-4">
-          <!-- Links do menu de navegação -->
-          <li><a href="#" class="hover:text-blue-600">Início</a></li>
+          <li><a href="#" aria-current="page" class="hover:text-blue-600">Início</a></li>
           <li><a href="#" class="hover:text-blue-600">Sobre</a></li>
           <li><a href="#" class="hover:text-blue-600">Contato</a></li>
         </ul>
@@ -23,54 +30,58 @@
     </div>
   </header>
 
-  <!-- Conteúdo principal do site -->
+  <!-- Conteúdo principal -->
   <main class="max-w-6xl mx-auto mt-8 px-4">
-    <h2 class="text-xl font-semibold mb-4">Imóveis em destaque</h2>
-    <!-- Grade de imóveis -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <h2 class="text-2xl font-semibold mb-6">Imóveis em Destaque</h2>
 
-      <!-- Card do Imóvel 1 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden">
-        <!-- Imagem do imóvel -->
-        <img src="https://via.placeholder.com/400x250" alt="Imóvel 1" class="w-full h-48 object-cover">
-        <!-- Informações do imóvel -->
+    <!-- Grade de imóveis -->
+    <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6" aria-label="Lista de imóveis disponíveis">
+
+      <!-- Card de imóvel -->
+      <article class="bg-white rounded-xl shadow-md overflow-hidden">
+        <img src="https://via.placeholder.com/400x250" 
+             alt="Foto do apartamento no centro com 3 quartos e 2 banheiros" 
+             class="w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="text-lg font-semibold">Apartamento no Centro</h3>
           <p class="text-gray-600">3 quartos, 2 banheiros, 1 vaga</p>
           <p class="text-blue-600 font-bold mt-2">R$ 450.000</p>
         </div>
-      </div>
+      </article>
 
-      <!-- Card do Imóvel 2 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden">
-        <img src="https://via.placeholder.com/400x250" alt="Imóvel 2" class="w-full h-48 object-cover">
+      <!-- Card de imóvel -->
+      <article class="bg-white rounded-xl shadow-md overflow-hidden">
+        <img src="https://via.placeholder.com/400x250" 
+             alt="Foto da casa com jardim, 4 quartos e 3 banheiros" 
+             class="w-full h-48 object-cover">
         <div class="p-4">
           <h3 class="text-lg font-semibold">Casa com Jardim</h3>
           <p class="text-gray-600">4 quartos, 3 banheiros, 2 vagas</p>
           <p class="text-blue-600 font-bold mt-2">R$ 650.000</p>
         </div>
-      </div>
+      </article>
 
-      <!-- Card do Imóvel 3 -->
-      <div class="bg-white rounded-xl shadow-md overflow-hidden">
-        <img src="https://via.placeholder.com/400x250" alt="Imóvel 3" class="w-full h-48 object-cover">
+      <!-- Card de imóvel -->
+      <article class="bg-white rounded-xl shadow-md overflow-hidden">
+        <img src="https://via.placeholder.com/400x250" 
+             alt="Foto de kitnet mobiliada com 1 quarto" 
+             class="w-full h-48 object-cover">
         <div class="p-4">
-          <h3 class="text-lg font-semibold">Kitnet mobiliada</h3>
+          <h3 class="text-lg font-semibold">Kitnet Mobiliada</h3>
           <p class="text-gray-600">1 quarto, 1 banheiro</p>
           <p class="text-blue-600 font-bold mt-2">R$ 180.000</p>
         </div>
-      </div>
+      </article>
 
-    </div>
+    </section>
   </main>
 
-  <!-- Rodapé do site -->
+  <!-- Rodapé -->
   <footer class="bg-white mt-12 py-6 shadow-inner">
     <div class="max-w-6xl mx-auto text-center text-sm text-gray-500">
       © 2025 Imobiliária Modelo. Todos os direitos reservados.
     </div>
   </footer>
 
-  <!-- Fim do corpo da página -->
 </body>
 </html>
